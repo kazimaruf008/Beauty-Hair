@@ -1,0 +1,10 @@
+.header-banner{
+    background:url(../../images/header.PNG) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 600px;;
+}
+.title-banner{
+    font-size:200px;
+    color:#d3450c;
+}

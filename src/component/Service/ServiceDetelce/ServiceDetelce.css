@@ -1,0 +1,19 @@
+.big-a{
+    font-size: 50px;
+    color: rgba(197, 171, 55, 0.705);
+    border: 1px solid  rgba(197, 171, 55, 0.705);
+    padding: 0px 20px;
+    display: inline-block;
+}
+.fast4{
+    box-sizing: border-box;
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.fast-img{
+    width: 250px;
+}
+.service-title{
+    display: inline-block;
+}
