@@ -6,7 +6,7 @@ import "./Review.css"
 const Review = () => {
     const [Review, setReview] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/Review')
+        fetch('https://obscure-caverns-87715.herokuapp.com/Review')
             .then(response => response.json())
             .then(data => setReview(data))
     }, [])

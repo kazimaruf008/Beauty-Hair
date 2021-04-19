@@ -25,7 +25,7 @@ const BookNow = ({ modalIsOpen, closeModal, myDate, name }) => {
         data.myDate = myDate;
         data.created = new Date();
         
-        fetch('http://localhost:5000/addAppointment', {
+        fetch('https://obscure-caverns-87715.herokuapp.com/addAppointment', {
             method: 'POST',
             headers: { 'content-type': 'application/json' },
             body: JSON.stringify(data)

@@ -27,7 +27,7 @@ const ServiceDetelce = () => {
     let { _id } = useParams();
     const [ServiceDetelce, setServiceDetelce] = useState([])
     useEffect(() => {
-        fetch(`http://localhost:5000/events/${_id}`)
+        fetch(`https://obscure-caverns-87715.herokuapp.com/events/${_id}`)
             .then(response => response.json())
             .then(data => setServiceDetelce(data[0]))
     }, [])

@@ -5,7 +5,7 @@ import AllService from '../AllService/AllService';
 const Service = () => {
     const [ServiceEvents, setServiceEvent] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/events')
+        fetch('https://obscure-caverns-87715.herokuapp.com/events')
             .then(response => response.json())
             .then(data => setServiceEvent(data))
     }, [])

@@ -20,7 +20,7 @@ const AddService = () => {
             description: data.description
         };
         console.log(eventData)
-        const url = `http://localhost:5000/addEvent`;
+        const url = `https://obscure-caverns-87715.herokuapp.com/addEvent`;
 
         fetch(url, {
             method: 'POST',

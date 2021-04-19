@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 const BookingList = () => {
     const [appointment, setAppointment] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/appointment')
+        fetch('https://obscure-caverns-87715.herokuapp.com/appointment')
             .then(response => response.json())
             .then(data => setAppointment(data))
     }, [])

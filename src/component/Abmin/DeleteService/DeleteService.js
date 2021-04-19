@@ -4,13 +4,13 @@ import React, { useEffect, useState } from 'react';
 const DeleteService = () => {
     const [ProductEvents, setEvent] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/events')
+        fetch('https://obscure-caverns-87715.herokuapp.com/events')
             .then(response => response.json())
             .then(data => setEvent(data))
     }, [])
     const HandelDelete = id => {
         console.log(id)
-        fetch(`http://localhost:5000/deleteProduct/${id}`, {
+        fetch(`https://obscure-caverns-87715.herokuapp.com/deleteProduct/${id}`, {
             method: 'DELETE'
         })
             .then(response => response.json())

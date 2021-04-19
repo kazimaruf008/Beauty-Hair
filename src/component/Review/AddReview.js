@@ -7,7 +7,7 @@ import "./Review.css"
 const AddReview = () => {
     const { register, handleSubmit, watch, formState: { errors } } = useForm();
     const onSubmit = data => {
-        fetch('http://localhost:5000/addReview', {
+        fetch('https://obscure-caverns-87715.herokuapp.com/addReview', {
             method: 'POST',
             headers: { 'content-type': 'application/json' },
             body: JSON.stringify(data)
@@ -21,7 +21,7 @@ const AddReview = () => {
     }
     const [Review, setReview] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/Review')
+        fetch('https://obscure-caverns-87715.herokuapp.com/Review')
             .then(response => response.json())
             .then(data => setReview(data))
     }, [])
