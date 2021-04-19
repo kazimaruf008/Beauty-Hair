@@ -25,10 +25,11 @@ const Profile = ({ loginUser }) => {
                 </div>
                 <div className="col-md-8">
                     <div id="MyProfile">
-                        <h1>Name: {loginUser.name, loginUser.displayName}</h1>
+                        <h1>Name: {loginUser.name}{loginUser.displayName}</h1>
                         <h6>E-Mail: {loginUser.email}</h6>
                         <div className='profile-img'>
-                            <img className="img-responsive" src={loginUser.photo, loginUser.photoURL} alt="your-photo" />
+                            <img className="img-responsive" src={loginUser.photoURL} alt="your-photo" />
+                            <img className="img-responsive" src={loginUser.photoURL}/>
                         </div>
                     </div>
                     <div id="orderList">
